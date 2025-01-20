@@ -1,8 +1,9 @@
 const bodyParser = require("body-parser");
 const express = require("express");
-const { join } = require("path");
-const eventRoutes = require(join(process.cwd(), "routes", "events"));
-const authRoutes = require(join(process.cwd(), "routes", "auth"));
+const { resolve } = require("path");
+
+const eventRoutes = require(resolve(process.cwd(), "routes", "events"));
+const authRoutes = require(resolve(process.cwd(), "routes", "auth"));
 
 const app = express();
 
