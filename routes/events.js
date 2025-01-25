@@ -5,7 +5,7 @@ const { checkAuth } = require('../util/auth');
 const {
   isValidText,
   isValidDate,
-  isValidImageUrl,
+  isValidImageUrl
 } = require('../util/validation');
 
 const router = express.Router();
